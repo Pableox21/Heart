@@ -193,17 +193,21 @@
 
         </style>
     </head>
-    <body>
-        <div class="message">Quieres ser mi pareja Jazmin ❤️</div>
+    <body onclick="Playaudio">
+        <audio id="audio" loop>
+            <source src="cacion.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="message">Quieres ser mi pareja Jazmin? ❤️</div>
         <div id="bubbles-text"></div>
         <script src="script.js"></script>
         <script>
             // Lista de mensajes románticos que aparecerán en burbujas
 const messages = [
-  "Te amo muchísimo ❤️",
+  "Te quiero muchísimo ❤️",
   "Gracias por estar en mi vida 🌟",
   "Eres mi persona favorita 💕",
-  "Juntos por siempre 🥰",
+  "quiero estar contigo siempre 🥰",
   "Tú y yo, para siempre 💖",
   "Tu sonrisa me ilumina 💫",
   "Eres lo mejor que me ha pasado 😍",
@@ -272,6 +276,12 @@ function createTextBubble() {
 // Llamamos a la función createTextBubble cada 500 milisegundos (0.5 segundos)
 setInterval(createTextBubble, 500);
 
+        </script>
+
+        <script>
+            function Playaudio(){
+                document.getElementById("audio").play();
+            }
         </script>
     </body>
 
